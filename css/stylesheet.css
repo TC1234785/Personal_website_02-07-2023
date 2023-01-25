@@ -1,0 +1,14 @@
+/*hex code for blue p*/
+/* rgb() for red h1 */
+/* background of whole page beige*/
+p {
+    color:#0000ff;
+}
+
+h1 {
+    color:rgb(255, 0, 0);
+}
+
+body {
+    background-color:#f5f5dc;
+}
