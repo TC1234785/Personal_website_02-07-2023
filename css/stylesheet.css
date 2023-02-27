@@ -10,7 +10,13 @@ body {
 
 header {
     background-color: aliceblue;
-    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
 }
 
 #index_h1 {
