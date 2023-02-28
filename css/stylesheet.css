@@ -18,10 +18,9 @@ header {
 }
 
 .navbar {
-    display: flex;
     justify-content: center;
-    gap: 10px;
-
+    display: flex;
+    gap: 10px
 }
 
 #index_h1 {
@@ -34,7 +33,3 @@ footer {
     background-color: aliceblue;
 }
 
-article > div {
-    display: grid;
-    
-}
