@@ -8,6 +8,11 @@ body {
     background-color:#871282;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 header {
     background-color: aliceblue;
 }
@@ -27,4 +32,9 @@ footer {
     display: flex;
     justify-content: center;
     background-color: aliceblue;
+}
+
+article > div {
+    display: grid;
+    
 }
