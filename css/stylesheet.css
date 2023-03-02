@@ -9,6 +9,10 @@ h1 {
     padding-top: 10px;
 }
 
+#index_h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
 body {
     background-color:#b064ac;
 }
@@ -23,20 +27,15 @@ footer {
     padding-inline-start: 0px;
 }
 
-ul > li {
+.coursesUL > li {
     list-style-type: none;
     border-bottom: 4px ridge rgb(223, 217, 217);
 }
 
-ul > li:last-child {
+.courseUL > li:last-child {
     border-color: transparent;
 }
-/* 
-.middle {   
-    border-top: 2px ridge grey;
-    border-bottom: 2px ridge grey;
-}
- */
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -50,7 +49,23 @@ ul > li:last-child {
     padding-bottom: 5px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width:600px) {
+    .coursesUL> li{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        list-style-type: none;
+        border-bottom: 4px ridge rgb(30, 26, 26);
+    }
+
+    .courseUL > li:last-child {
+        border-color: transparent;
+    }
+    
+    .coursesUL > li > p:last-child {
+        grid-column: 2;
+        grid-row: 1
+    }
     .navbar {
         display: flex;
         flex-direction: row;
@@ -58,9 +73,6 @@ ul > li:last-child {
     }
 }
 
-#index_h1 {
-    font-family: "Montserrat", sans-serif;
-}
 
 
 
