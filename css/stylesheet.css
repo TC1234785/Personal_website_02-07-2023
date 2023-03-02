@@ -14,7 +14,26 @@ h1 {
 }
 
 body {
-    background-color:#b86fb5;
+    background-color:#b064ac;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.coursesUL {
+    padding-inline-start: 0px;
+}
+
+.coursesUL > li {
+    list-style-type: none;
+    border-bottom: 4px ridge rgb(223, 217, 217);
+}
+
+.courseUL > li:last-child {
+    border-color: transparent;
 }
 
 .grid-container {
@@ -53,4 +72,9 @@ body {
         justify-content: center;
     }
 }
+
+
+
+
+
 
