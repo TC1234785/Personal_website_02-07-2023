@@ -58,6 +58,10 @@ footer {
         border-bottom: 4px ridge rgb(30, 26, 26);
     }
 
+    .coursesUL> li:first-child > a {
+        display: flex;
+    }
+
     .courseUL > li:last-child {
         border-color: transparent;
     }
