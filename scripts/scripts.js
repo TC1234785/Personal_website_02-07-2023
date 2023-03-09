@@ -19,8 +19,7 @@ let user = prompt("Please enter your 4-digit course code: ");
 let isEqual = false;
 do {    
     for (let i = 0; i < courseList.length; i++) {
-        split_stack = courseList[i]['ID'].split(' ')[1]
-        if (split_stack === user) {
+        if (courseList[i].ID.includes(user)) {
             isEqual = true
             console.log(`Yes I am taking the course: ${courseList[i]["ID"]} - ${courseList[i]["Name"]}`)
         ;}
