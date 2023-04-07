@@ -23,7 +23,12 @@ function findCourse(courseList){
         console.log('Your input was invalid. Please enter a 4-digit numerical course code.')
         }
         else {
-            validInput = true;
+            for (let course of courseList){
+                if (course.code.includes(userInput)){
+                    console.log(`Yes, I am taking the course: ${course.code}`)
+                }
+            }
+            validInput = true;        
         }
     } while (validInput === false)
     
@@ -33,20 +38,21 @@ function findCourse(courseList){
         }
     }
 
-    if (courseList.filter(courseCode => courseCode.code !== userInput)){
-        let newCourse = document.createElement('li')
-        let newTitle = document.createElement('a')
-        newTitle.innerText = userInput
-        let newDate = document.createElement('p')
-        newDate.innerText = 'Fall 2020'
-        let newDesc = document.createElement('p')
-        newDesc.innerText = 'N/A'
-        newCourse.appendChild(newTitle)
-        newCourse.appendChild(newDate)
-        newCourse.appendChild(newDesc)
-        document.querySelector('ul').appendChild(newCourse)
+    for (course in courseList){
+        if (course.code.includes(userInput) == false){
+            let newCourse = document.createElement('li')
+            let newTitle = document.createElement('a')
+            newTitle.innerText = userInput
+            let newDate = document.createElement('p')
+            newDate.innerText = 'Fall 2020'
+            let newDesc = document.createElement('p')
+            newDesc.innerText = 'N/A'
+            newCourse.appendChild(newTitle)
+            newCourse.appendChild(newDate)
+            newCourse.appendChild(newDesc)
+            document.querySelector('ul').appendChild(newCourse)
+        }
     }
-    
 }
 
 findCourse(createCourseArray())
